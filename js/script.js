@@ -1,55 +1,30 @@
 window.onload = function () {
-
 	// gnb open
-	$('.gnb__menu-1').mouseenter(function () {
-		$('.menu-list-1').show();
-		$(this).css('color', '#002bd2');
-	});
-	$('.gnb__menu-1').mouseleave(function () {
-		$('.menu-list-1').hide();
-		$(this).css('color', '#000');
-	});
-	$('.menu-list-1').mouseenter(function () {
-		$(this).show();
-		$('.gnb__menu-1').css('color', '#002bd2');
-	});
-	$('.menu-list-1').mouseleave(function () {
-		$(this).hide();
-		$('.gnb__menu-1').css('color', '#000');
-	});
+	const menuList = $('.menu-list');
+	const gnbMenus = [$('.gnb__menu01'), $('.gnb__menu02'), $('.gnb__menu03')];
+	const menuLists = [$('.menu-list01'), $('.menu-list02'), $('.menu-list03')];
 
-	$('.gnb__menu-2').mouseenter(function () {
-		$('.menu-list-2').show();
-		$(this).css('color', '#002bd2');
-	});
-	$('.gnb__menu-2').mouseleave(function () {
-		$('.menu-list-2').hide();
-		$(this).css('color', '#000');
-	});
-	$('.menu-list-2').mouseenter(function () {
-		$(this).show();
-		$('.gnb__menu-2').css('color', '#002bd2');
-	});
-	$('.menu-list-2').mouseleave(function () {
-		$(this).hide();
-		$('.gnb__menu-2').css('color', '#000');
-	});
+	function hideMenuList() {
+		menuList.hide();
+	}
 
-	$('.gnb__menu-3').mouseenter(function () {
-		$('.menu-list-3').show();
-		$(this).css('color', '#002bd2');
-	});
-	$('.gnb__menu-3').mouseleave(function () {
-		$('.menu-list-3').hide();
-		$(this).css('color', '#000');
-	});
-	$('.menu-list-3').mouseenter(function () {
-		$(this).show();
-		$('.gnb__menu-3').css('color', '#002bd2');
-	});
-	$('.menu-list-3').mouseleave(function () {
-		$(this).hide();
-		$('.gnb__menu-3').css('color', '#000');
+	$.each(gnbMenus, function (index) {
+		gnbMenus[index].hover(function () {
+			$(this).css('color', '#002bd2');
+			menuLists[index].show();
+			clearTimeout(gnbTimer);
+		}, function () {
+			$(this).removeAttr('style');
+			gnbTimer = setTimeout(hideMenuList, 10);
+		});
+
+		menuLists[index].hover(function () {
+			gnbMenus[index].css('color', '#002bd2');
+			clearTimeout(gnbTimer);
+		}, function () {
+			gnbMenus[index].removeAttr('style');
+			gnbTimer = setTimeout(hideMenuList, 10);
+		});
 	});
 
 	// visual swiper

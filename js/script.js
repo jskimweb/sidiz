@@ -1,29 +1,13 @@
 window.onload = function () {
 	// gnb open
-	const menuList = $('.menu-list');
-	const gnbMenus = [$('.gnb__menu01'), $('.gnb__menu02'), $('.gnb__menu03')];
-	const menuLists = [$('.menu-list01'), $('.menu-list02'), $('.menu-list03')];
+	const dep01List = $('.dep01>li');
+	const dep02s = [$('.mainmenu01+.dep02'), $('.mainmenu02+.dep02'), $('.mainmenu03+.dep02')];
 
-	function hideMenuList() {
-		menuList.hide();
-	}
-
-	$.each(gnbMenus, function (index) {
-		gnbMenus[index].hover(function () {
-			$(this).css('color', '#002bd2');
-			menuLists[index].show();
-			clearTimeout(gnbTimer);
+	$.each(dep01List, function (index) {
+		dep01List.eq(index).hover(function () {
+			dep02s[index].show();
 		}, function () {
-			$(this).removeAttr('style');
-			gnbTimer = setTimeout(hideMenuList, 10);
-		});
-
-		menuLists[index].hover(function () {
-			gnbMenus[index].css('color', '#002bd2');
-			clearTimeout(gnbTimer);
-		}, function () {
-			gnbMenus[index].removeAttr('style');
-			gnbTimer = setTimeout(hideMenuList, 10);
+			dep02s[index].hide();
 		});
 	});
 

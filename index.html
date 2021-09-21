@@ -30,12 +30,12 @@
             <input type="text" class="srch__input">
             <input type="submit" value="SEARCH" class="srch__btn">
           </form>
-          <ul class="user-menu clearfix">
-            <li><a href="#" class="user-menu01">로그인</a></li>
-            <li><a href="#" class="user-menu01">회원가입</a></li>
-            <li><a href="#" class="user-menu01">이벤트</a></li>
-            <li><a href="#" class="user-menu02 user-menu-comp">비교하기</a></li>
-            <li><a href="#" class="user-menu02 user-menu-cart">장바구니</a></li>
+          <ul class="user-menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#" class="user-menu__comp">비교하기</a></li>
+            <li><a href="#" class="user-menu__cart">장바구니</a></li>
           </ul>
         </div>
       </div>
@@ -43,116 +43,146 @@
         <div class="container">
           <a href="index.html" class="header__logo">로고</a>
           <nav class="gnb">
-            <ul class="gnb-list clearfix">
-              <li><span class="gnb__menu gnb__menu01">ABOUT SIDIZ</span></li>
-              <li><span class="gnb__menu gnb__menu02">PRODUCTS</span></li>
-              <li><span class="gnb__menu gnb__menu03">SUPPORT</span></li>
+            <ul class="dep01">
+              <li>
+                <span class="mainmenu mainmenu01">ABOUT SIDIZ</span>
+                <ul class="dep02">
+                  <li><a href="#">BRAND STORY</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><span>특별관</span></li>
+                  <li><a href="#">월간윤종신</a></li>
+                  <li><a href="#">기대요 프로젝트</a></li>
+                  <li><a href="#">T50 10주년</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="mainmenu mainmenu02">PRODUCTS</span>
+                <ul class="dep02">
+                  <li>
+                    <div class="dep02__cate">
+                      <span>모든 제품보기</span>
+                    </div>
+                    <a href="#">SMART FINDER</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <span>브랜드 콜라보레이션</span>
+                    </div>
+                    <a href="#">마블</a>
+                    <a href="#">디즈니</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">마블x시디즈 태스크</a>
+                    </div>
+                    <a href="#">T80</a>
+                    <a href="#">T50</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">디즈니x시디즈 키즈</a>
+                    </div>
+                    <a href="#">atti</a>
+                    <a href="#">ringo cover</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">사무용의자</a>
+                    </div>
+                    <a href="#">T80</a>
+                    <a href="#">T55</a>
+                    <a href="#">T50 AIR</a>
+                    <a href="#">T50</a>
+                    <a href="#">T40</a>
+                    <a href="#">T25</a>
+                    <a href="#">TAB PLUS</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">학생용의자</a>
+                    </div>
+                    <a href="#">ringo</a>
+                    <a href="#">ible</a>
+                    <a href="#">T25</a>
+                    <a href="#">T50</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">유아용의자</a>
+                    </div>
+                    <a href="#">molti</a>
+                    <a href="#">atti</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">중역용의자</a>
+                    </div>
+                    <a href="#">PRONARD</a>
+                    <a href="#">VESTO</a>
+                    <a href="#">CELIOS</a>
+                    <a href="#">NUO</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">회의실/컨퍼런스의자</a>
+                    </div>
+                    <a href="#">T50 side</a>
+                    <a href="#">T40 side</a>
+                    <a href="#">T30 side</a>
+                    <a href="#">LOLLY</a>
+                    <a href="#">NOOI</a>
+                    <a href="#">M02</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">인테리어의자</a>
+                    </div>
+                    <a href="#">BUTTON</a>
+                    <a href="#">SPOON</a>
+                    <a href="#">MANE</a>
+                    <a href="#">EGA</a>
+                    <a href="#">M06</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">스툴/좌식의자</a>
+                    </div>
+                    <a href="#">FUNGUS</a>
+                    <a href="#">PILLO</a>
+                    <a href="#">M17</a>
+                    <a href="#">M05</a>
+                  </li>
+                  <li>
+                    <div class="dep02__cate">
+                      <a href="#">액세서리</a>
+                    </div>
+                    <a href="#">headrest</a>
+                    <a href="#">hanger</a>
+                    <a href="#">cover-cushion</a>
+                    <a href="#">caster-glide</a>
+                    <a href="#">footrest</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="mainmenu mainmenu03">SUPPORT</span>
+                <ul class="dep02">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">친절상담</a></li>
+                  <li><a href="#">A/S 신청</a></li>
+                  <li><a href="#">A/S 안내</a></li>
+                  <li><a href="#">매장 찾기</a></li>
+                  <li><a href="#">품질 보증 서비스</a></li>
+                  <li><a href="#">제품설명서 다운로드</a></li>
+                  <li><a href="#">카탈로그 다운로드</a></li>
+                  <li><a href="#">사업제안</a></li>
+                  <li><a href="#">대리점 개설문의</a></li>
+                  <li><a href="#">대량 구매 문의</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
-        <ul class="menu-list menu-list01">
-          <li><a href="#" class="menu-list__menu">BRAND STORY</a></li>
-          <li><a href="#" class="menu-list__menu">NEWS</a></li>
-          <li><span>특별관</span></li>
-          <li><a href="#" class="menu-list__menu">월간윤종신</a></li>
-          <li><a href="#" class="menu-list__menu">기대요 프로젝트</a></li>
-          <li><a href="#" class="menu-list__menu">T50 10주년</a></li>
-        </ul>
-        <ul class="menu-list menu-list02">
-          <li>
-            <div class="menu-list__cate"><span>모든 제품보기</span></div>
-            <a href="#" class="menu-list__model">SMART FINDER</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><span>브랜드 콜라보레이션</span></div>
-            <a href="#" class="menu-list__model">마블</a>
-            <a href="#" class="menu-list__model">디즈니</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">마블x시디즈 태스크</a></div>
-            <a href="#" class="menu-list__model">T80</a>
-            <a href="#" class="menu-list__model">T50</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">디즈니x시디즈 키즈</a></div>
-            <a href="#" class="menu-list__model">atti</a>
-            <a href="#" class="menu-list__model">ringo cover</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">사무용의자</a></div>
-            <a href="#" class="menu-list__model">T80</a>
-            <a href="#" class="menu-list__model">T55</a>
-            <a href="#" class="menu-list__model">T50 AIR</a>
-            <a href="#" class="menu-list__model">T50</a>
-            <a href="#" class="menu-list__model">T40</a>
-            <a href="#" class="menu-list__model">T25</a>
-            <a href="#" class="menu-list__model">TAB PLUS</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">학생용의자</a></div>
-            <a href="#" class="menu-list__model">ringo</a>
-            <a href="#" class="menu-list__model">ible</a>
-            <a href="#" class="menu-list__model">T25</a>
-            <a href="#" class="menu-list__model">T50</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">유아용의자</a></div>
-            <a href="#" class="menu-list__model">molti</a>
-            <a href="#" class="menu-list__model">atti</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">중역용의자</a></div>
-            <a href="#" class="menu-list__model">PRONARD</a>
-            <a href="#" class="menu-list__model">VESTO</a>
-            <a href="#" class="menu-list__model">CELIOS</a>
-            <a href="#" class="menu-list__model">NUO</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">회의실/컨퍼런스의자</a></div>
-            <a href="#" class="menu-list__model">T50 side</a>
-            <a href="#" class="menu-list__model">T40 side</a>
-            <a href="#" class="menu-list__model">T30 side</a>
-            <a href="#" class="menu-list__model">LOLLY</a>
-            <a href="#" class="menu-list__model">NOOI</a>
-            <a href="#" class="menu-list__model">M02</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">인테리어의자</a></div>
-            <a href="#" class="menu-list__model">BUTTON</a>
-            <a href="#" class="menu-list__model">SPOON</a>
-            <a href="#" class="menu-list__model">MANE</a>
-            <a href="#" class="menu-list__model">EGA</a>
-            <a href="#" class="menu-list__model">M06</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">스툴/좌식의자</a></div>
-            <a href="#" class="menu-list__model">FUNGUS</a>
-            <a href="#" class="menu-list__model">PILLO</a>
-            <a href="#" class="menu-list__model">M17</a>
-            <a href="#" class="menu-list__model">M05</a>
-          </li>
-          <li>
-            <div class="menu-list__cate"><a href="#">액세서리</a></div>
-            <a href="#" class="menu-list__model">headrest</a>
-            <a href="#" class="menu-list__model">hanger</a>
-            <a href="#" class="menu-list__model">cover-cushion</a>
-            <a href="#" class="menu-list__model">caster-glide</a>
-            <a href="#" class="menu-list__model">footrest</a>
-          </li>
-        </ul>
-        <ul class="menu-list menu-list03">
-          <li><a href="#" class="menu-list__menu">FAQ</a></li>
-          <li><a href="#" class="menu-list__menu">친절상담</a></li>
-          <li><a href="#" class="menu-list__menu">A/S 신청</a></li>
-          <li><a href="#" class="menu-list__menu">A/S 안내</a></li>
-          <li><a href="#" class="menu-list__menu">매장 찾기</a></li>
-          <li><a href="#" class="menu-list__menu">품질 보증 서비스</a></li>
-          <li><a href="#" class="menu-list__menu">제품설명서 다운로드</a></li>
-          <li><a href="#" class="menu-list__menu">카탈로그 다운로드</a></li>
-          <li><a href="#" class="menu-list__menu">사업제안</a></li>
-          <li><a href="#" class="menu-list__menu">대리점 개설문의</a></li>
-          <li><a href="#" class="menu-list__menu">대량 구매 문의</a></li>
-        </ul>
       </div>
     </header>
     <!--// Header -->

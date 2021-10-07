@@ -1,5 +1,22 @@
 window.onload = function () {
-	// gnb open
+	// 모달창 닫기
+	const modal = $('.modal');
+	const modalBox = $('.modal-box');
+	const modalClose = $('.modal__close');
+
+	modalClose.click(function () {
+		modal.stop().fadeOut();
+	});
+
+	modal.click(function () {
+		$(this).stop().fadeOut();
+	});
+
+	modalBox.click(function (event) {
+		event.stopPropagation();
+	});
+
+	// gnb 보이기/숨기기
 	const dep01List = $('.dep01>li');
 	const dep02s = [$('.mainmenu01+.dep02'), $('.mainmenu02+.dep02'), $('.mainmenu03+.dep02')];
 
@@ -11,7 +28,7 @@ window.onload = function () {
 		});
 	});
 
-	// visual swiper
+	// visual 슬라이드
 	new Swiper('.sw-visual', {
 		loop: true,
 		speed: 1500,

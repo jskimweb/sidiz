@@ -125,7 +125,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  z-index: 999999;
+  z-index: 6;
 }
 
 .header-top {
@@ -430,7 +430,7 @@ body {
   left: 0;
   top: 10%;
   display: block;
-  z-index: 9;
+  z-index: 1;
 }
 
 .sw-visual__txt {
@@ -524,7 +524,7 @@ body {
   bottom: 18%;
   display: block;
   font-size: 0;
-  z-index: 999;
+  z-index: 3;
 }
 
 .sw-visual__prev {
@@ -1112,7 +1112,7 @@ body {
   right: 4rem;
   bottom: 4rem;
   display: block;
-  z-index: 999;
+  z-index: 3;
 }
 
 .side-btn {

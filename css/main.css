@@ -892,7 +892,7 @@ body {
   width: 62rem;
   height: 35rem;
   background: url("../images/blogMainImg.jpg") no-repeat center;
-  background: cover;
+  background-size: cover;
 }
 
 /* Footer */
